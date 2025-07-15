@@ -1,0 +1,7 @@
+.image {
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: white;
+}

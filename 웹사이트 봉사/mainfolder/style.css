@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header-section {
+  background-color: black;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  position: fixed;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: beige;
+  padding: 0 50px;
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  padding: 15px 0;
+  font-size: 30px;
+}
+
+.title a {
+  color: beige;
+}
+
+main {
+  width: 100%;
+  top: 8vh;
+  height: 92vh;
+  display: flex;
+  overflow-y: scroll;
+  position: relative;
+}
+
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: rgba(166, 166, 166, 0.774);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main::-webkit-scrollbar-track {
+  background: rgba(108, 108, 108, 0.1);
+}
+
+.btn-1 {
+  color: black;
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.readmore-btn-box {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  border-radius: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    align-items: center;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu li {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+
+  li a {
+    color: beige;
+  }
+
+  #menu_bar {
+    display: none;
+  }
+
+  .detail-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail-section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .detail-section h2 {
+    color: beige;
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .detail-section p {
+    color: beige;
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 13px 20px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+  }
+
+  .detail-section-mobile {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menu_bar {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .detail-section {
+    display: none;
+  }
+
+  .logo-section {
+    width: 100%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    position: fixed;
+  }
+
+  .detail-section-mobile {
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .detail-section-mobile .blank {
+    width: 100%;
+    height: 50%;
+  }
+
+  .detail-section-mobile article {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(9, 9, 9, 0.8);
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .detail-section-mobile article h2 {
+    color: beige;
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin: 13px;
+  }
+
+  .detail-section-mobile article p {
+    color: beige;
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 13px 20px 13px;
+  }
+  aside {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    height: 92vh;
+    background-color: rgb(42, 42, 42);
+    color: beige;
+    flex-direction: column;
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  aside header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    font-size: 25px;
+    box-shadow: 0 5px 10px rgba(30, 30, 30, 0.1);
+  }
+
+  aside ul {
+    top: 10%;
+    height: 90%;
+  }
+
+  aside li {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(30, 30, 30, 0.3);
+  }
+  .image {
+    scale: calc(0.7);
+  }
+}
